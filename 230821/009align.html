@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>flex</title>
+  <style>
+    .item{
+        width: 100px;
+        height: 100px;
+        background-color: skyblue;
+    }
+    .item:nth-child(odd){
+        background-color: gold;
+    }
+
+    .container {
+        width: 500px;
+        height: 500px;
+        background-color: #ddd;
+        display: flex;
+        /* flax-wrap으로 크기를 초과하는 친구를 떨어트릴 수 있어요. */
+        /* flex-wrap: wrap; */
+        /* align-content: center; */
+        align-items: center;
+        
+        
+        /*  */
+    }
+
+    .item {
+        /* .item을 display flex속성을 줌으로서 item의 텍스트가 자식으로 바뀝니다. */
+        /* 자유롭게 반응형을 적용할 수 있도록 justify-content와 align-items를 사용합니다. */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+  </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="item">item1</div>
+        <div class="item">item2</div>
+        <div class="item">item3</div>
+        <div class="item">item4</div>
+        <div class="item">item5</div>
+        <div class="item">item6</div>
+    </div>
+
+</body>
+
+</html>

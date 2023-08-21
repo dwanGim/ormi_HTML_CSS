@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>align 실습</title>
+  <style>
+    /* A박스를 오른쪽 중간으로 옮겨보세요! */
+    .wrap {
+      background: #ddd;
+      width: 200px;
+      height: 200px;
+      display: flex; /*먼저 wrap에 display : flex 값을 줍니다.*/
+      /* justify-content: right; 자식값(박스)를 오른쪽으로 옮기고 */
+      justify-content: flex-end; /* flex-end를 통해 주축의 끝으로부터 시작하는 방법도 있네요. */
+      align-items: center;  /* items를 가운데 정렬함으로 가운데부터 채워넣게 적용합니다. */
+        
+      /* 다양한 방법이 있네요..
+      flex-direction: column;
+      justify-content: center;
+      align-items: end; */
+
+    }
+
+    .box {
+      width: 50px;
+      height: 50px;
+      color: #fff;
+      text-align: center;
+      line-height: 50px;
+      font-weight: bold;
+      background: royalblue;
+    }
+    
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <div class="box">A</div>
+  </div>
+
+</body>
+
+</html>

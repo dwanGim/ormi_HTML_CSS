@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>float실습</title>
+  <style>
+    
+        /* 키워드 값 */
+    /* float: left;
+    float: right;
+    float: none;
+    float: inline-start;
+    float: inline-end; */
+
+    /* 전역 값 */
+    /* float: inherit;
+    float: initial;
+    float: unset;
+        */
+        
+   
+    header {
+        background-color: skyblue;
+        height: 50px;
+    }
+    section {
+        background-color: slateblue;
+        height: 200px;
+        width: 70%;
+        float: left;
+    }
+    aside {
+        background-color: lime;
+        height: 200px;
+        width: 30%;
+        float: right;
+    }
+
+    footer {
+        background-color: salmon;
+        height: 50px;
+        clear: both;
+    }
+
+    /* .clear-fix::after{
+        content: "";
+        display: block;
+        clear: both;
+    } */
+  </style>
+</head>
+<body>
+    <header>
+        <p>header</p>
+    </header>
+    <div class="clear-fix">
+    </div>
+    <section>
+        <article>
+            <p>section>article</p>
+        </article>
+    </section>
+    <aside>
+        <p>aside</p>
+    </aside>
+    <footer>
+        <p>footer</p>
+    </footer>
+</body>
+</html>
