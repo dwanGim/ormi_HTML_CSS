@@ -1,0 +1,23 @@
+.main-insert{
+    width: 1000px;
+    margin: auto;
+}
+
+.insert-form{
+    width: 800px;
+    height: 600px;
+    border-top: 2px solid black;
+    margin: 10px 10px 10px;
+    padding: 10px;
+}
+
+.insert-category,
+.insert-title,
+.insert-content,
+.upload-file,
+.button-footer{
+    display: flex;
+    text-align: center;
+}
+
+

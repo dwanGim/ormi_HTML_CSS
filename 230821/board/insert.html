@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>글 작성</title>
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/insert.css">
+</head>
+
+<body>
+    <main class="main-insert">
+        <h2>글쓰기</h2>
+        <p>내용을 입력해 주세요</p>
+
+        <div class="insert-form">
+            <form action="" method="post">
+                <div class="insert-category">
+                    <h4>카테고리</h4>
+                    <select class=" form-select" name="category" id="category" required>
+                        <option value="category1" selected>일반</option>
+                        <option value="category2">카테고리2</option>
+                        <option value="category3">카테고리3</option>
+                        <option value="category4">카테고리4</option>
+                        <option value="notice">공지</option>
+                    </select>	
+                </div>
+                <div class="insert-title">
+                    <h4>제목</h4>
+                    <input type="text" name="input-title" id="input-title">
+                </div>
+                <div class="insert-content">
+                    <h4>내용</h4>
+                    <textarea name="input-content" id="input-content" required></textarea>
+                </div>
+                <div class="upload-file">
+                    <h4>파일첨부</h4>
+                    <input type="file" name="input-file" value="input-file">
+                    <div class="upload-file-result">
+                        <ul>
+                            <!--uploading area-->
+                        </ul>
+                    </div>
+                </div>
+                <div class="button-footer">
+                    <button class="post-list">목록</button>
+                    <button class="reset">초기화</button>
+                    <button class="insert">작성</button>
+                </div>
+            </form>
+        </div>
+    </main>	
+
+</body>
+
+</html>
